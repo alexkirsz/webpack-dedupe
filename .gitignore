@@ -1,4 +1,4 @@
 node_modules/
 
 .DS_Store
-output.js
+app/output.js

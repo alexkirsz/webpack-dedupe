@@ -4,6 +4,14 @@ sudo npm link
 cd ../app
 npm install
 npm link foo
-npm run build
-node output
+
+npm run no-dedupe
+node output # => false
+
+npm run dedupe
+node output # => false
+
+npm run replace
+node output # => true
 ```
+

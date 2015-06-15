@@ -8,17 +8,13 @@ module.exports = {
     filename: 'output.js',
   },
   plugins: [
-    // Force any `require('react')` to yield local react
-    new webpack.NormalModuleReplacementPlugin(
-      /^react$/,
-      require.resolve('react')
-    ),
+    new webpack.optimize.DedupePlugin(),
   ],
   module: {
     loaders: [
       {
         test: /\.jsx?$/,
-        loader: 'babel',
+        loader: 'react-hot!babel',
         include: [
           path.resolve('./src'),
           fs.realpathSync(path.resolve('./node_modules/foo/src'))

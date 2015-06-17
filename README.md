@@ -23,6 +23,6 @@ node output
 npm run alias
 node output
 # react deduped: true
-# react/addons deduped: false
+# react/addons deduped: true
 ```
 

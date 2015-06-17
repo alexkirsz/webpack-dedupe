@@ -13,5 +13,8 @@ node output # => false
 
 npm run replace
 node output # => true
+
+npm run alias
+node output # => true
 ```
 

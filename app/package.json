@@ -5,7 +5,8 @@
   "scripts": {
     "dedupe": "webpack --config dedupe.config.js",
     "replace": "webpack --config replace.config.js",
-    "no-dedupe": "webpack --config no-dedupe.config.js"
+    "no-dedupe": "webpack --config no-dedupe.config.js",
+    "alias": "webpack --config alias.config.js"
   },
   "dependencies": {
     "react": "^0.13.3"

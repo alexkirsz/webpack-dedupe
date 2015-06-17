@@ -9,7 +9,7 @@ module.exports = {
   },
   resolve: {
     alias: {
-      react: require.resolve('react'),
+      react: path.resolve('./node_modules/react'),
     },
   },
   module: {
